@@ -43,9 +43,8 @@ const initialPlayerZ = 0;
 let playerSpeed = 0.1;
 const keys = {};
 let highScores = JSON.parse(localStorage.getItem('highScores')) || [];
-// Filter high scores to keep only 526 and 215
+// Filter high scores to keep only 526 and 215 (this line will only run once to clean up old scores)
 highScores = highScores.filter(score => score.score === 526 || score.score === 215);
-localStorage.setItem('highScores', JSON.stringify(highScores));
 
 // UI Elements
 const scoreElement = document.getElementById('score');
