@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#ui-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#score {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#highscore-container {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+#highscore-container h2 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+#highscore-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin: 0;
+}
+
+#highscore-list li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#new-highscore-form {
+    margin-top: 20px;
+}
+
+#new-highscore-form p {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+#player-name {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #fff;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#save-score-button, #restart-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Endless Voyager</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="ui-container">
+        <div id="score">Score: 0</div>
+        <div id="highscore-container">
+            <h2>High Scores</h2>
+            <ol id="highscore-list"></ol>
+        </div>
+    </div>
+    <div id="game-over" style="display: none;">
+        Game Over
+        <div id="new-highscore-form" style="display: none;">
+            <p>New High Score!</p>
+            <input type="text" id="player-name" placeholder="Enter your name">
+            <button id="save-score-button">Save</button>
+        </div>
+        <button id="restart-button">Restart</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
